@@ -1,0 +1,33 @@
+//Realizar un programa que rellene un vector de tamaño N, con valores ingresados por el
+//usuario. A continuación, se debe buscar un elemento dentro del arreglo (el número a buscar
+//también debe ser ingresado por el usuario). El programa debe indicar la posición donde se
+//encuentra el valor. En caso que el número se encuentre repetido dentro del arreglo se deben
+//imprimir todas las posiciones donde se encuentra ese valor.
+//Finalmente, en caso que el número a buscar no está adentro del arreglo se debe mostrar un
+//mensaje.
+Algoritmo ejercicio3
+	Definir vector, valorN, buscar, contador, i Como Real
+	Escribir "Ingrese el tamaño del vector"
+	leer valorN
+	Dimension vector[valorN]
+	Escribir "Por favor digite los numeros deseados"
+	para i=0 hasta valorN-1
+		leer vector[i]
+	FinPara
+	Escribir "Ingresar elemento a buscar"
+	leer buscar
+	contador= 0
+	para i=0 hasta valorN-1
+		si vector[i] = buscar Entonces
+			Escribir i, " "
+			contador = contador + 1			
+		FinSi
+	FinPara
+	si contador > 0 Entonces
+		Escribir "El valor fue encontrado"
+	SiNo
+		escribir "El valor no se encuentra en el arreglo"
+	FinSi
+	
+	
+FinAlgoritmo

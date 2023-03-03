@@ -1,0 +1,45 @@
+//Realizar un programa que lea 10 números reales por teclado, los almacene en un arreglo y
+//muestre por pantalla la suma, resta y multiplicación de todos los números ingresados al
+//arreglo.
+Algoritmo ejercicio2
+	Definir vector, i Como Real
+	Dimension vector[10]
+	Escribir "Por favor ingrese 10 datos númericos"
+	Para i=0 hasta 9
+		leer vector[i]
+	FinPara
+	adicion(vector)
+	sustracion(vector)
+	multiplicacion(vector)
+FinAlgoritmo
+
+SubProceso adicion (vector Por Referencia)
+	definir suma, i Como Real
+	suma=0
+	Para i=0 hasta 9
+		suma=suma+vector[i]
+	FinPara
+	Escribir suma
+FinSubProceso
+
+SubProceso sustracion (vector Por Referencia)
+	definir resta, i Como Real
+	resta=0
+	Para i=0 hasta 9
+		si resta = 0
+			resta=vector[i]
+		SiNo
+			resta=vector[i]-resta
+		FinSi
+		
+	FinPara
+	Escribir resta
+FinSubProceso
+SubProceso multiplicacion (vector Por Referencia)
+	definir mult, i Como Real
+	mult=0
+	Para i=0 hasta 9
+		mult=mult*vector[i]
+	FinPara
+	Escribir mult
+FinSubProceso
